@@ -1,5 +1,16 @@
 const router = require('express').Router();
 
+
+//added for hojme-routes
+const homeRoutes = require('./home-routes.js');
+
+router.use('/', homeRoutes);
+
+
+
+
+
+
 const apiRoutes = require('./api');
 
 router.use('/api', apiRoutes);
